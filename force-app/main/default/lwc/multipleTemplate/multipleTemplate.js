@@ -1,4 +1,7 @@
 import { LightningElement } from 'lwc';
+import templateOne from './templateOne.html';
+import templateTwo from './templateTwo.html';
+import templateThree from './templates/templateThree.html';
 
 export default class MultipleTemplate extends LightningElement {
     showTemplateOne = true;
@@ -7,7 +10,7 @@ export default class MultipleTemplate extends LightningElement {
     }
     render() {
         console.log('render');
-        return this.showTemplateOne = this.showTemplateOne ? templateOne : templateTwo;
+        return this.showTemplateOne ? templateOne : templateThree;
     }
     switchTemplate() {
         this.showTemplateOne = !this.showTemplateOne;
