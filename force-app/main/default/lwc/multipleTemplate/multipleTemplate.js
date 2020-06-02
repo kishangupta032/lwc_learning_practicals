@@ -10,7 +10,8 @@ export default class MultipleTemplate extends LightningElement {
     }
     render() {
         console.log('render');
-        return this.showTemplateOne ? templateOne : templateThree;
+        // return this.showTemplateOne ? templateOne : templateThree;
+        return this.showTemplateOne ? templateOne : templateTwo;
     }
     switchTemplate() {
         this.showTemplateOne = !this.showTemplateOne;
