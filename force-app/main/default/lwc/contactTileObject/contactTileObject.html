@@ -1,0 +1,13 @@
+<template>
+    <template if:true={contact}>
+        <p>{contact.name}</p>
+        <p>{contact.title}</p>
+    </template>
+    <template if:false={contact}>
+        <p>No contact data available.</p>
+    </template>
+    <button onclick={updateContactName}><b>1</b> Update contact.name</button>
+    <br />
+    <button onclick={updateContactField}><b>2</b> Update contact field</button>
+    <br />
+</template>
